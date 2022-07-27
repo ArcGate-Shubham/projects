@@ -1,0 +1,23 @@
+{% autoescape off %}
+
+welcome to django login 
+
+Hello {{ name }}
+
+Please confirm your email by clicking on the following link.
+
+Confirmation link : http://{{ domain }}{% url 'activate' uid64=uid token=token %} 
+
+{% endautoescape %}
+
+{% comment %} {% autoescape off %}
+
+welcome to django login 
+
+Hello {{ name }}
+
+Please confirm your email by clicking on the following link.
+
+Confirmation link : http://{{ login }}{% url 'activate' uid64=uid token=token %} 
+
+{% endautoescape %} {% endcomment %}
